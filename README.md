@@ -1,0 +1,2 @@
+# redirect-script
+Réinit Password
