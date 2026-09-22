@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirection…</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get("email");
+    const code = params.get("code");
+
+    const target = "https://script.google.com/macros/s/AKfycbw04yDr_648gpJifheCwfujD926mIYZpBdDB5RpBUGgS5ZMIyqCmWjtUoUEM9B17VgW/exec"
+      + "?email=" + encodeURIComponent(email)
+      + "&code=" + encodeURIComponent(code);
+
+    window.location.href = target;
+  </script>
+</head>
+<body>
+  Redirection…
+</body>
+</html>
